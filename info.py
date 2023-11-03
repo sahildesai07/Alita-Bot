@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
 API_ID = int(environ.get('API_ID', '21669638'))
 API_HASH = environ.get('API_HASH', '2029f6b2fecd7dfa9c006741bf2fe4c3')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6541534800:AAFfhooEha_nXgroIswhwNgZh68bsYzQc-8')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
