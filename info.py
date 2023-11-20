@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', '21669638'))
-API_HASH = environ.get('API_HASH', '2029f6b2fecd7dfa9c006741bf2fe4c3')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6541534800:AAFfhooEha_nXgroIswhwNgZh68bsYzQc-8')
+API_ID = int(environ.get('API_ID', '22046181'))
+API_HASH = environ.get('API_HASH', '54a82e965ae136785450fc8c2beaaede')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6783203781:AAFprRQ3ATxl96fSi8ryuC49omRJHFcokIo')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
@@ -22,24 +22,24 @@ STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ
 PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
 
 # Bot Admins
-ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '2038847704 1700825627').split()]
+ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '5415771622').split()]
 auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users for auth_users in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001872448417').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001929634981')
+INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002027563292').split()]
+auth_channel = environ.get('AUTH_CHANNEL', '-1001725568693')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002031331583'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002009090481'))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.xigprut.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/rockersallmoviesearch')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/cinemaduniyyya')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/UltroidxTeam')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/MovizTube')
 
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
@@ -58,13 +58,13 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "✅ I Found: <code>{query}</code>\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating} / 10</a>\n☀️ Languages: {languages}\n📀 RunTime: {runtime} Minutes\n\n🗣 Requested by: {message.from_user.mention}\n©️ Powered by: <b>{message.chat.title}</b>")
 FILE_CAPTION = environ.get("FILE_CAPTION", "<i>{file_name}</i>\n\nᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "shareus.io")
-SHORTLINK_API = environ.get("SHORTLINK_API", "BcvHnZA6SNMVrBhkDzmYPbI8KUB2")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.shareus.io")
+SHORTLINK_API = environ.get("SHORTLINK_API", "PUIAQBIFrydvLhIzAOeGV8yZppu2")
 WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} group!")
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/cdsupportz/22")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/Ultroid_Official/18")
 
 # stream features vars
-F2LINK_C = int(environ.get("F2LINK_C", "-1001650513858"))
+F2LINK_C = int(environ.get("F2LINK_C", "-1001976541518"))
 ON_DWNLD = environ.get("ON_DWNLD", "aks-file-to-link-ashubhskeleton1.koyeb.app")
 ON_WATCH = environ.get("ON_WATCH", "aks-file-to-link-ashubhskeleton1.koyeb.app")
                            
