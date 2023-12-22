@@ -10,3 +10,4 @@ cinemagoer
 shortzy
 aiohttp
 asyncio
+coroutine
