@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', '22780589'))
-API_HASH = environ.get('API_HASH', 'f848cc1686fd7a2b77cc59fd3f27bf36')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6710180641:AAEbaHFzZTxYsmqnDoFEd7ZkiotoTfw_9ig')
+API_ID = int(environ.get('API_ID', '29674380'))
+API_HASH = environ.get('API_HASH', '9a73b874a8e0129ac9eb89e50e64ab9a')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6593773691:AAHm0y2x5Ak7i0Gufd3C0BeuQAdSht6zcaw')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
@@ -22,7 +22,7 @@ STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ
 PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
 
 # Bot Admins
-ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '6272184341 6020516635').split()]
+ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '').split()]
 auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users for auth_users in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -30,7 +30,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002027563292').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1002108419450')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002080911157'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002014612911'))
 
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
