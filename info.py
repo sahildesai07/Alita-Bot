@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', '29674380'))
-API_HASH = environ.get('API_HASH', '9a73b874a8e0129ac9eb89e50e64ab9a')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6593773691:AAHm0y2x5Ak7i0Gufd3C0BeuQAdSht6zcaw')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
@@ -27,10 +27,10 @@ auth_users = [int(auth_users) if id_pattern.search(auth_users) else auth_users f
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002027563292').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002108419450')
+INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002014612911'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
@@ -64,7 +64,7 @@ WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Ultroid_Official/18")
 
 # stream features vars
-F2LINK_C = int(environ.get("F2LINK_C", "-1001976541518"))
+F2LINK_C = int(environ.get("F2LINK_C", ""))
 ON_DWNLD = environ.get("ON_DWNLD", "moviwbot-763805717c42.herokuapp.com")
 ON_WATCH = environ.get("ON_WATCH", "moviwbot-763805717c42.herokuapp.com")
                            
